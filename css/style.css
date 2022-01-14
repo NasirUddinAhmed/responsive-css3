@@ -1,5 +1,6 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 /* base style */
 body {
@@ -21,6 +22,12 @@ main {
 hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 27px;
+}
+
+/* Navbar Styles */
+.nav-box {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Top players style  */
@@ -90,10 +97,55 @@ hr {
   width: 224px;
   height: 104px;
 }
+.course {
+  width: 252px;
+  height: 272px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
+}
+.course-banner {
+  padding-left: 14px;
+}
+.course-detail {
+  margin: 0 15px;
+}
+.course-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-author {
+  color: #ed6b4f;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
 .course-info {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.course-info > div > span {
+  padding-left: 5px;
+}
+.course-time {
+  color: #ff4a60;
+  width: 94px;
+  height: 29px;
+  background-color: #ffe4e8;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+#time-second {
+  background: #fee5df;
+  color: #ed6b4f;
 }
 .fa-star {
   font-size: 12px;
@@ -103,6 +155,13 @@ hr {
 }
 .fa-star.empty {
   color: #aeaeae;
+}
+.fa-clock {
+  color: #ff4a60;
+  margin-top: 8px;
+}
+#clock-second {
+  color: #ed6b4f;
 }
 
 /* --------Media Queries 
