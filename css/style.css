@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 /* base style */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
@@ -21,15 +25,48 @@ main {
 }
 hr {
   border: 1px solid #d1d1d1;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 
 /* Navbar Styles */
+.header-box {
+  background-color: #562eff;
+}
 .nav-box {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo p {
+  margin-left: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.nav-logo img {
+  width: 40px;
+  height: 50px;
+}
+.nav-profile {
+  display: flex;
+  align-items: center;
+}
+#nav-home a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 36px;
+}
+#profile {
+  width: 50px;
+  height: 50px;
+}
 /* Top players style  */
 .top-players {
   margin-bottom: 30px;
@@ -43,11 +80,12 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-columns: 1fr 1fr 1fr; */
-  grid-row-gap: 30px;
+  column-gap: 30px;
 }
 .player {
   display: flex;
   align-items: center;
+  margin-top: 40px;
 }
 .player img {
   width: 56px;
@@ -66,6 +104,7 @@ hr {
 }
 .blog {
   display: flex;
+  margin-top: 40px;
 }
 .blog .thumbnail img {
   width: 177px;
@@ -98,8 +137,9 @@ hr {
   height: 104px;
 }
 .course {
+  margin-top: 40px;
   width: 252px;
-  height: 272px;
+  height: 252px;
   background: #fff;
   border-radius: 13px;
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.05);
@@ -120,6 +160,7 @@ hr {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  margin-top: 10px;
 }
 .course-info {
   position: relative;
