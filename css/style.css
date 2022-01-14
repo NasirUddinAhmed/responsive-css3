@@ -35,13 +35,14 @@ hr {
 }
 .nav-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 80px;
+  margin: 0 auto;
 }
 .nav-logo {
   display: flex;
+  padding-right: 450px;
 }
 .nav-logo p {
   margin-left: 15px;
